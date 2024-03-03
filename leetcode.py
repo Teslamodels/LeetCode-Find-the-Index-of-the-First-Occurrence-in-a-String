@@ -1,7 +1,9 @@
 class Solution:
-    def isPalindrome(self, x: int) -> bool:
-        x_str = str(x)
-        return x_str == x_str[::-1]
-
+    def strStr(self, haystack: str, needle: str) -> int:
+        if needle in haystack:
+            return haystack.index(needle)
+        else:
+            return -1
+        
 solution1 = Solution()
-print(solution1.isPalindrome(-121))
+print(solution1.strStr(haystack = "leetcode", needle = "leeto"))
